@@ -1,14 +1,22 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: whitesmoke;
+    font-family: Arial;
+    background-color: whitesmoke;   
+    
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 30px;    
+    padding: 0px 20px;   
+    height: 50px;
+    background-color: white;
+    border-color: grey;
+    margin-top: 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); 
+    top: 20px;
+     
 }
 
 nav ul {
@@ -40,6 +48,11 @@ article {
     position: relative;
 }
 
+article:hover{
+    transform: scale(1.03);
+    transition: 0.3s;
+}
+
 article img {
     width: 100%;
     border-radius: 10px;
@@ -65,7 +78,78 @@ article button {
     cursor: pointer;
 }
 
-article:hover{
-    transform: scale(1.03);
-    transition: o.3s;
+hr {
+    width: 600px;
+    max-width: 90%;
+    border: none;
+    height: 2px;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin: 40px auto;
+    border-radius: 1px;
 }
+
+
+section {
+    width: 300px;
+    margin: 40px auto;
+}
+
+.contact-title {
+    text-align: center;
+    font-size: 28px;
+    color: #333;
+    margin: 40px 0 20px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: white;
+    width: 800px;
+    max-width: 90%;
+    padding: 20px;
+    margin: 0px auto;
+    
+
+    
+}
+
+input, select, textarea {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border: 2px solid blue;
+}
+
+form button{
+    padding: 10px;
+    border: none;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+    
+    section form {
+        width: 100%; 
+    }
+}
+

@@ -23,3 +23,49 @@ nav a {
     text-decoration: none;
     color: black;    
 }
+
+nav a:hover{
+    color: blue;
+}
+
+article {
+    display: grid;
+    gap: 15px;
+    background-color: white;
+    width: 300px;
+    margin: 40px auto;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px gray;
+    position: relative;
+}
+
+article img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+article span {
+    background-color: #42A5F5;
+    color: white;
+    padding: 5px 10px;
+    width: fit-content;
+    border-radius: 5px;
+    position: absolute;
+    top: 16px;
+    left: 16px;
+}
+
+article button {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+article:hover{
+    transform: scale(1.03);
+    transition: o.3s;
+}

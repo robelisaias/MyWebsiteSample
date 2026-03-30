@@ -7,6 +7,7 @@ body {
 
 nav {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding: 0px 20px;   
@@ -16,7 +17,9 @@ nav {
     margin-top: 0;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); 
     top: 0px;
+    max-width: 95%;
     position: sticky;
+    height: auto;
     z-index: 1000;
      
 }
@@ -24,6 +27,7 @@ nav {
 nav ul {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
     margin: 0;
     padding: 0;
@@ -144,6 +148,7 @@ form button{
     nav {
         flex-direction: column;
         align-items: flex-start;
+        justify-content: center;
         padding: 10px 15px;
         margin: 0 10px;
         width: auto; 
@@ -155,6 +160,7 @@ form button{
         flex-direction: column;
         width: 100%; 
         padding: 0;
+        gap: 10%;
     }
 
     nav ul li {
